@@ -36,7 +36,7 @@ struct MyEventsView: View {
         }
         .navigationTitle("My Events")
         .onAppear {
-            viewModel.requestNotificationAuthorization()
+            viewModel.scheduleRepeatingNotifications()
         }
         .navigationViewWrapped()
     }

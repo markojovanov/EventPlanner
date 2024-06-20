@@ -11,21 +11,9 @@ import UserNotifications
 class MyEventsViewModel: ObservableObject {
     @Published private var timer: Timer?
 
-    func requestNotificationAuthorization() {
-        let center = UNUserNotificationCenter.current()
-        center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, _ in
-            if granted {
-                print("Notification permission granted.")
-                self.scheduleRepeatingNotifications()
-            } else {
-                print("Notification permission denied.")
-            }
-        }
-    }
-
     func scheduleRepeatingNotifications() {
         timer?.invalidate()
-        timer = Timer.scheduledTimer(withTimeInterval: 300, repeats: true) { _ in
+        timer = Timer.scheduledTimer(withTimeInterval: 86400, repeats: true) { _ in
             self.sendNotification()
         }
     }

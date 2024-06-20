@@ -14,4 +14,15 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     ) -> Bool {
         return true
     }
+
+    func requestNotificationAuthorization() {
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
+            if granted {
+                print("Notification permission granted.")
+            } else {
+                print("Notification permission denied.")
+            }
+        }
+    }
 }
