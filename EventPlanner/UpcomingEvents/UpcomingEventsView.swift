@@ -43,7 +43,7 @@ struct UpcomingEventsView: View {
         List {
             ForEach(viewModel.events) { event in
                 NavigationLink {
-                    UpcomingEventDetails(event: event)
+                    UpcomingEventDetailsView(event: event)
                 } label: {
                     EventListItem(
                         title: event.title,

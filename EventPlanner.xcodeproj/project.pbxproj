@@ -15,7 +15,7 @@
 		4D4EDB372C20C18600A9D87F /* EventPlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4EDB362C20C18600A9D87F /* EventPlannerTests.swift */; };
 		4D4EDB412C20C18600A9D87F /* EventPlannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4EDB402C20C18600A9D87F /* EventPlannerUITests.swift */; };
 		4D4EDB432C20C18600A9D87F /* EventPlannerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4EDB422C20C18600A9D87F /* EventPlannerUITestsLaunchTests.swift */; };
-		4D4EDB502C20C38500A9D87F /* EventDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4EDB4F2C20C38500A9D87F /* EventDetails.swift */; };
+		4D4EDB502C20C38500A9D87F /* MyEventDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4EDB4F2C20C38500A9D87F /* MyEventDetailsView.swift */; };
 		4D4EDB522C20C6D800A9D87F /* View+NavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4EDB512C20C6D800A9D87F /* View+NavigationLink.swift */; };
 		4D4EDB542C20CC3300A9D87F /* EventMapLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4EDB532C20CC3300A9D87F /* EventMapLocationView.swift */; };
 		4D4EDB562C22FEB800A9D87F /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4EDB552C22FEB800A9D87F /* CameraView.swift */; };
@@ -29,13 +29,14 @@
 		4D4EDB722C2335B300A9D87F /* UpcomingEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4EDB712C2335B300A9D87F /* UpcomingEventsView.swift */; };
 		4D4EDB762C23409700A9D87F /* WrappedNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4EDB752C23409700A9D87F /* WrappedNavigation.swift */; };
 		4D4EDB782C23434500A9D87F /* UpcomingEventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4EDB772C23434500A9D87F /* UpcomingEventsViewModel.swift */; };
-		4D4EDB7D2C2352D400A9D87F /* UpcomingEventDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4EDB7C2C2352D400A9D87F /* UpcomingEventDetails.swift */; };
+		4D4EDB7D2C2352D400A9D87F /* UpcomingEventDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4EDB7C2C2352D400A9D87F /* UpcomingEventDetailsView.swift */; };
 		4D4EDB812C2354FB00A9D87F /* GeneralButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4EDB802C2354FB00A9D87F /* GeneralButton.swift */; };
 		4D4EDB8D2C247B8A00A9D87F /* Shimmer in Frameworks */ = {isa = PBXBuildFile; productRef = 4D4EDB8C2C247B8A00A9D87F /* Shimmer */; };
 		4D64C3972C2490C90068A0E4 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D64C3962C2490C90068A0E4 /* Date+Extension.swift */; };
 		4D64C3992C24919C0068A0E4 /* EventListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D64C3982C24919C0068A0E4 /* EventListItem.swift */; };
 		4D64C39B2C2495FC0068A0E4 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D64C39A2C2495FC0068A0E4 /* SettingsViewModel.swift */; };
 		4D64C39D2C249BD00068A0E4 /* MyEventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D64C39C2C249BD00068A0E4 /* MyEventsViewModel.swift */; };
+		4D64C39F2C24B84D0068A0E4 /* EventDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D64C39E2C24B84D0068A0E4 /* EventDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +68,7 @@
 		4D4EDB3C2C20C18600A9D87F /* EventPlannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventPlannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D4EDB402C20C18600A9D87F /* EventPlannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPlannerUITests.swift; sourceTree = "<group>"; };
 		4D4EDB422C20C18600A9D87F /* EventPlannerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPlannerUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		4D4EDB4F2C20C38500A9D87F /* EventDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetails.swift; sourceTree = "<group>"; };
+		4D4EDB4F2C20C38500A9D87F /* MyEventDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventDetailsView.swift; sourceTree = "<group>"; };
 		4D4EDB512C20C6D800A9D87F /* View+NavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+NavigationLink.swift"; sourceTree = "<group>"; };
 		4D4EDB532C20CC3300A9D87F /* EventMapLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMapLocationView.swift; sourceTree = "<group>"; };
 		4D4EDB552C22FEB800A9D87F /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
@@ -81,13 +82,14 @@
 		4D4EDB712C2335B300A9D87F /* UpcomingEventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEventsView.swift; sourceTree = "<group>"; };
 		4D4EDB752C23409700A9D87F /* WrappedNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappedNavigation.swift; sourceTree = "<group>"; };
 		4D4EDB772C23434500A9D87F /* UpcomingEventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEventsViewModel.swift; sourceTree = "<group>"; };
-		4D4EDB7C2C2352D400A9D87F /* UpcomingEventDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEventDetails.swift; sourceTree = "<group>"; };
+		4D4EDB7C2C2352D400A9D87F /* UpcomingEventDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEventDetailsView.swift; sourceTree = "<group>"; };
 		4D4EDB802C2354FB00A9D87F /* GeneralButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralButton.swift; sourceTree = "<group>"; };
 		4D4EDB842C24602200A9D87F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D64C3962C2490C90068A0E4 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		4D64C3982C24919C0068A0E4 /* EventListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListItem.swift; sourceTree = "<group>"; };
 		4D64C39A2C2495FC0068A0E4 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		4D64C39C2C249BD00068A0E4 /* MyEventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventsViewModel.swift; sourceTree = "<group>"; };
+		4D64C39E2C24B84D0068A0E4 /* EventDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 			children = (
 				4D4EDB7B2C2352C500A9D87F /* MyEventsDetails */,
 				4D4EDB7A2C2352B900A9D87F /* UpcomingEventDetails */,
+				4D64C39E2C24B84D0068A0E4 /* EventDetailsView.swift */,
 			);
 			path = EventDetails;
 			sourceTree = "<group>";
@@ -252,7 +255,7 @@
 		4D4EDB7A2C2352B900A9D87F /* UpcomingEventDetails */ = {
 			isa = PBXGroup;
 			children = (
-				4D4EDB7C2C2352D400A9D87F /* UpcomingEventDetails.swift */,
+				4D4EDB7C2C2352D400A9D87F /* UpcomingEventDetailsView.swift */,
 			);
 			path = UpcomingEventDetails;
 			sourceTree = "<group>";
@@ -262,7 +265,7 @@
 			children = (
 				4D4EDB552C22FEB800A9D87F /* CameraView.swift */,
 				4D4EDB582C22FF3200A9D87F /* ImagePicker.swift */,
-				4D4EDB4F2C20C38500A9D87F /* EventDetails.swift */,
+				4D4EDB4F2C20C38500A9D87F /* MyEventDetailsView.swift */,
 			);
 			path = MyEventsDetails;
 			sourceTree = "<group>";
@@ -413,7 +416,8 @@
 				4D4EDB5B2C22FFD500A9D87F /* MyEventsView.swift in Sources */,
 				4D4EDB262C20C18300A9D87F /* ContentView.swift in Sources */,
 				4D4EDB562C22FEB800A9D87F /* CameraView.swift in Sources */,
-				4D4EDB7D2C2352D400A9D87F /* UpcomingEventDetails.swift in Sources */,
+				4D4EDB7D2C2352D400A9D87F /* UpcomingEventDetailsView.swift in Sources */,
+				4D64C39F2C24B84D0068A0E4 /* EventDetailsView.swift in Sources */,
 				4D4EDB812C2354FB00A9D87F /* GeneralButton.swift in Sources */,
 				4D64C3972C2490C90068A0E4 /* Date+Extension.swift in Sources */,
 				4D4EDB6D2C2332E100A9D87F /* AppDelegate.swift in Sources */,
@@ -422,7 +426,7 @@
 				4D4EDB782C23434500A9D87F /* UpcomingEventsViewModel.swift in Sources */,
 				4D4EDB6F2C23343500A9D87F /* DataModel.swift in Sources */,
 				4D4EDB542C20CC3300A9D87F /* EventMapLocationView.swift in Sources */,
-				4D4EDB502C20C38500A9D87F /* EventDetails.swift in Sources */,
+				4D4EDB502C20C38500A9D87F /* MyEventDetailsView.swift in Sources */,
 				4D4EDB5D2C22FFDF00A9D87F /* SettingsView.swift in Sources */,
 				4D4EDB282C20C18300A9D87F /* MyEventDetails.swift in Sources */,
 				4D4EDB632C2308AA00A9D87F /* UpcomingEvent.swift in Sources */,
