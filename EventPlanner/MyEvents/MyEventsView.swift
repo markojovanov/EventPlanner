@@ -54,7 +54,7 @@ struct MyEventsView: View {
     let config = ModelConfiguration(isStoredInMemoryOnly: true)
     let container = try! ModelContainer(for: MyEventDetails.self, configurations: config)
 
-    for i in 1 ..< 10 {
+    for _ in 1 ..< 10 {
         let user = MyEventDetails(
             name: "New event - Skopje",
             information: "Sport match",

@@ -17,7 +17,7 @@
 		4D4EDB432C20C18600A9D87F /* EventPlannerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4EDB422C20C18600A9D87F /* EventPlannerUITestsLaunchTests.swift */; };
 		4D4EDB502C20C38500A9D87F /* EventDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4EDB4F2C20C38500A9D87F /* EventDetails.swift */; };
 		4D4EDB522C20C6D800A9D87F /* View+NavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4EDB512C20C6D800A9D87F /* View+NavigationLink.swift */; };
-		4D4EDB542C20CC3300A9D87F /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4EDB532C20CC3300A9D87F /* MapView.swift */; };
+		4D4EDB542C20CC3300A9D87F /* EventMapLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4EDB532C20CC3300A9D87F /* EventMapLocationView.swift */; };
 		4D4EDB562C22FEB800A9D87F /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4EDB552C22FEB800A9D87F /* CameraView.swift */; };
 		4D4EDB592C22FF3200A9D87F /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4EDB582C22FF3200A9D87F /* ImagePicker.swift */; };
 		4D4EDB5B2C22FFD500A9D87F /* MyEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4EDB5A2C22FFD500A9D87F /* MyEventsView.swift */; };
@@ -69,7 +69,7 @@
 		4D4EDB422C20C18600A9D87F /* EventPlannerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPlannerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4D4EDB4F2C20C38500A9D87F /* EventDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetails.swift; sourceTree = "<group>"; };
 		4D4EDB512C20C6D800A9D87F /* View+NavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+NavigationLink.swift"; sourceTree = "<group>"; };
-		4D4EDB532C20CC3300A9D87F /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		4D4EDB532C20CC3300A9D87F /* EventMapLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMapLocationView.swift; sourceTree = "<group>"; };
 		4D4EDB552C22FEB800A9D87F /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		4D4EDB582C22FF3200A9D87F /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		4D4EDB5A2C22FFD500A9D87F /* MyEventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventsView.swift; sourceTree = "<group>"; };
@@ -181,15 +181,6 @@
 			path = EventPlannerUITests;
 			sourceTree = "<group>";
 		};
-		4D4EDB572C22FF2600A9D87F /* Camera */ = {
-			isa = PBXGroup;
-			children = (
-				4D4EDB552C22FEB800A9D87F /* CameraView.swift */,
-				4D4EDB582C22FF3200A9D87F /* ImagePicker.swift */,
-			);
-			path = Camera;
-			sourceTree = "<group>";
-		};
 		4D4EDB652C23325900A9D87F /* EventDetails */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,9 +204,8 @@
 			isa = PBXGroup;
 			children = (
 				4D4EDB6B2C2332CB00A9D87F /* DataModel */,
-				4D4EDB572C22FF2600A9D87F /* Camera */,
+				4D4EDB532C20CC3300A9D87F /* EventMapLocationView.swift */,
 				4D4EDB512C20C6D800A9D87F /* View+NavigationLink.swift */,
-				4D4EDB532C20CC3300A9D87F /* MapView.swift */,
 				4D4EDB752C23409700A9D87F /* WrappedNavigation.swift */,
 				4D4EDB802C2354FB00A9D87F /* GeneralButton.swift */,
 				4D64C3962C2490C90068A0E4 /* Date+Extension.swift */,
@@ -270,6 +260,8 @@
 		4D4EDB7B2C2352C500A9D87F /* MyEventsDetails */ = {
 			isa = PBXGroup;
 			children = (
+				4D4EDB552C22FEB800A9D87F /* CameraView.swift */,
+				4D4EDB582C22FF3200A9D87F /* ImagePicker.swift */,
 				4D4EDB4F2C20C38500A9D87F /* EventDetails.swift */,
 			);
 			path = MyEventsDetails;
@@ -429,7 +421,7 @@
 				4D4EDB722C2335B300A9D87F /* UpcomingEventsView.swift in Sources */,
 				4D4EDB782C23434500A9D87F /* UpcomingEventsViewModel.swift in Sources */,
 				4D4EDB6F2C23343500A9D87F /* DataModel.swift in Sources */,
-				4D4EDB542C20CC3300A9D87F /* MapView.swift in Sources */,
+				4D4EDB542C20CC3300A9D87F /* EventMapLocationView.swift in Sources */,
 				4D4EDB502C20C38500A9D87F /* EventDetails.swift in Sources */,
 				4D4EDB5D2C22FFDF00A9D87F /* SettingsView.swift in Sources */,
 				4D4EDB282C20C18300A9D87F /* MyEventDetails.swift in Sources */,

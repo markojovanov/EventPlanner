@@ -66,7 +66,7 @@ struct MyEventDetailsView: View {
             self.imageData = event.picture
         }
         .navigate(isActive: $showMap) {
-            MapView(selectedLocation: $location)
+            EventMapLocationView(selectedLocation: $location)
         }
         .navigate(isActive: $showCameraView) {
             CameraView(imageData: $imageData)
