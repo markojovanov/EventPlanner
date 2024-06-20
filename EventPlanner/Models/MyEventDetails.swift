@@ -10,6 +10,7 @@ import SwiftData
 
 @Model
 final class MyEventDetails {
+    @Attribute(.unique)
     var name: String
     var information: String
     var location: [Double]

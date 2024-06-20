@@ -21,7 +21,7 @@ struct EventDetailsView: View {
     var mainButtonTitle: String
     var mainButtonColor: Color
     var mainButtonAction: () -> ()
-    @State private var imageData: Data?
+    var imageData: Data?
 
     var body: some View {
         ScrollView {

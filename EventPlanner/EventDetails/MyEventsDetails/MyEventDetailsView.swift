@@ -13,7 +13,7 @@ struct MyEventDetailsView: View {
     @Environment(\.dismiss) private var dismiss
     @State private var showCameraView = false
     @State private var imageData: Data?
-    var event: MyEventDetails
+    @Bindable var event: MyEventDetails
 
     var body: some View {
         EventDetailsView(
@@ -24,17 +24,17 @@ struct MyEventDetailsView: View {
             cameraButtonAction: { showCameraView = true },
             mainButtonTitle: "Delete from my events",
             mainButtonColor: .red,
-            mainButtonAction: { deleteEvent(event) }
+            mainButtonAction: { deleteEvent(event) },
+            imageData: event.picture
         )
         .onAppear {
             if let imageData {
                 updateEvent(event, with: imageData)
             }
-            self.imageData = event.picture
         }
         .navigationTitle("Event details")
         .navigate(isActive: $showCameraView) {
-            CameraView(imageData: $imageData)
+            CameraView(imageData: $event.picture)
         }
     }
 
@@ -47,15 +47,7 @@ struct MyEventDetailsView: View {
 
     private func updateEvent(_ event: MyEventDetails, with imageData: Data?) {
         withAnimation {
-            let newEvent = MyEventDetails(
-                name: event.name,
-                information: event.name,
-                location: event.location,
-                startTime: event.startTime,
-                picture: imageData
-            )
-            modelContext.insert(newEvent)
-            modelContext.delete(event)
+            event.picture = imageData
         }
     }
 }

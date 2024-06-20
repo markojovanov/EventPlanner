@@ -39,6 +39,9 @@ struct CameraView: View {
                         saveImage()
                         dismiss()
                     }
+                    GeneralButton(title: "Retake photo", color: .blue) {
+                        showingImagePicker = true
+                    }
                 }
             }
             .padding()
