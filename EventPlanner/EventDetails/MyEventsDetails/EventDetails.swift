@@ -31,7 +31,9 @@ struct MyEventDetailsView: View {
                 .foregroundColor(.secondary)
                 .padding(.bottom, 20)
             if let startDate = isoFormatter.date(from: event.startTime) {
-                createDateView(startDate)
+                Text("Start date: \(startDate.formatDate())")
+                    .font(.caption2)
+                    .foregroundColor(.secondary)
             }
             HStack(spacing: 20) {
                 GeneralButton(title: "Add picture", color: .blue) {
@@ -69,15 +71,6 @@ struct MyEventDetailsView: View {
         .navigate(isActive: $showCameraView) {
             CameraView(imageData: $imageData)
         }
-    }
-
-    private func createDateView(_ startDate: Date) -> some View {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .medium
-        dateFormatter.timeStyle = .short
-        return Text("Start date: \(dateFormatter.string(from: startDate))")
-            .font(.subheadline)
-            .foregroundColor(.secondary)
     }
 
     private func showMapView() {

@@ -29,7 +29,9 @@ struct UpcomingEventDetails: View {
                 .foregroundColor(.secondary)
                 .padding(.bottom, 20)
             if let startDate = isoFormatter.date(from: event.start) {
-                createDateView(startDate)
+                Text("Start date: \(startDate.formatDate())")
+                    .font(.caption2)
+                    .foregroundColor(.secondary)
             }
             GeneralButton(title: "Show in map", color: .green) {
                 showMapView()
@@ -47,15 +49,6 @@ struct UpcomingEventDetails: View {
         .navigate(isActive: $showMap) {
             MapView(selectedLocation: $location)
         }
-    }
-
-    private func createDateView(_ startDate: Date) -> some View {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .medium
-        dateFormatter.timeStyle = .short
-        return Text("Start date: \(dateFormatter.string(from: startDate))")
-            .font(.subheadline)
-            .foregroundColor(.secondary)
     }
 
     private func showMapView() {

@@ -23,7 +23,7 @@ class UpcomingEventsViewModel: ObservableObject {
             if let data = data {
                 let decoder = JSONDecoder()
                 do {
-                    let response = try decoder.decode(EventResponse.self, from: data)
+                    let response = try decoder.decode(UpcomingEventsResponse.self, from: data)
                     DispatchQueue.main.async {
                         self.events = response.results
                     }

@@ -12,7 +12,6 @@ actor DataModel {
     static let shared = DataModel()
     private init() {}
 
-    ////////
     nonisolated lazy var modelContainer: ModelContainer = {
         let schema = Schema([MyEventDetails.self])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)

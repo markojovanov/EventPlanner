@@ -15,9 +15,6 @@ struct EventPlannerApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .onAppear {
-                    appDelegate.requestNotificationAuthorization()
-                }
         }
         .modelContainer(DataModel.shared.modelContainer)
     }

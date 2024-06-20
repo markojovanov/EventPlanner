@@ -1,5 +1,5 @@
 //
-//  MyEvent.swift
+//  MyEventDetails.swift
 //  EventPlanner
 //
 //  Created by Marko Jovanov on 17.6.24.

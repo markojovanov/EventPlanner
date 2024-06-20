@@ -12,32 +12,29 @@ struct PaymentOptionsView: View {
     let bankAccounts = ["NLB **** 1111", "HalkBank **** 2222"]
 
     var body: some View {
-        VStack {
-            List {
-                Section(header: Text("Credit Cards")) {
-                    ForEach(creditCards, id: \.self) { card in
-                        HStack {
-                            Image(systemName: "creditcard.fill")
-                                .foregroundColor(.blue)
-                            Text(card)
-                        }
-                    }
-                }
-
-                Section(header: Text("Bank Accounts")) {
-                    ForEach(bankAccounts, id: \.self) { account in
-                        HStack {
-                            Image(systemName: "banknote.fill")
-                                .foregroundColor(.green)
-                            Text(account)
-                        }
+        List {
+            Section(header: Text("Credit Cards")) {
+                ForEach(creditCards, id: \.self) { card in
+                    HStack {
+                        Image(systemName: "creditcard.fill")
+                            .foregroundColor(.blue)
+                        Text(card)
                     }
                 }
             }
-            .listStyle(InsetGroupedListStyle())
+
+            Section(header: Text("Bank Accounts")) {
+                ForEach(bankAccounts, id: \.self) { account in
+                    HStack {
+                        Image(systemName: "banknote.fill")
+                            .foregroundColor(.green)
+                        Text(account)
+                    }
+                }
+            }
         }
+        .listStyle(InsetGroupedListStyle())
         .navigationBarTitle("Payment Options")
-        .navigationViewWrapped()
     }
 }
 

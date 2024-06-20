@@ -20,7 +20,7 @@ struct GeneralButton: View {
                 .padding()
                 .background(color)
                 .foregroundColor(.white)
-                .cornerRadius(10)
+                .cornerRadius(14)
                 .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 5)
         }
     }

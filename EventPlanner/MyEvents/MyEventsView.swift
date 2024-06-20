@@ -9,6 +9,7 @@ import SwiftData
 import SwiftUI
 
 struct MyEventsView: View {
+    @StateObject private var viewModel = MyEventsViewModel()
     @Environment(\.modelContext) private var modelContext
     @Query private var myEvents: [MyEventDetails]
 
@@ -18,13 +19,11 @@ struct MyEventsView: View {
                 NavigationLink {
                     MyEventDetailsView(event: myEvent)
                 } label: {
-                    VStack(alignment: .leading) {
-                        Text(myEvent.name)
-                            .font(.headline)
-                            .bold()
-                        Text(myEvent.information)
-                            .font(.caption)
-                    }
+                    EventListItem(
+                        title: myEvent.name,
+                        description: myEvent.information,
+                        startTime: myEvent.startTime
+                    )
                 }
             }
             .onDelete(perform: deleteItems)
@@ -36,6 +35,9 @@ struct MyEventsView: View {
             }
         }
         .navigationTitle("My Events")
+        .onAppear {
+            viewModel.requestNotificationAuthorization()
+        }
         .navigationViewWrapped()
     }
 
@@ -49,6 +51,22 @@ struct MyEventsView: View {
 }
 
 #Preview {
-    MyEventsView()
-        .modelContainer(for: MyEventDetails.self, inMemory: true)
+    let config = ModelConfiguration(isStoredInMemoryOnly: true)
+    let container = try! ModelContainer(for: MyEventDetails.self, configurations: config)
+
+    for i in 1 ..< 10 {
+        let user = MyEventDetails(
+            name: "New event - Skopje",
+            information: "Sport match",
+            location: [
+                21.425689,
+                42.005793
+            ],
+            startTime: "2024-09-10T18:45:00Z"
+        )
+        container.mainContext.insert(user)
+    }
+
+    return MyEventsView()
+        .modelContainer(container)
 }

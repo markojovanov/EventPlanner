@@ -23,9 +23,9 @@ public struct NavigationViewWrappedModifier: ViewModifier {
                     Spacer()
                 }
                 .background(.linearGradient(
-                    Gradient(colors: [.red, .orange]),
-                    startPoint: .top,
-                    endPoint: .bottomLeading)
+                    Gradient(colors: [.red, .orange, .yellow]),
+                    startPoint: .topLeading,
+                    endPoint: .bottomTrailing)
                 )
                 content
             }

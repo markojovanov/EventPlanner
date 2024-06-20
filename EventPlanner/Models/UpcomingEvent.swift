@@ -1,11 +1,13 @@
 //
-//  Event.swift
+//  UpcomingEvent.swift
 //  EventPlanner
 //
 //  Created by Marko Jovanov on 19.6.24.
 //
 
 import Foundation
+
+// MARK: - UpcomingEvent
 
 struct UpcomingEvent: Codable, Identifiable {
     let id: String
@@ -15,6 +17,8 @@ struct UpcomingEvent: Codable, Identifiable {
     let start: String
 }
 
-struct EventResponse: Codable {
+// MARK: - UpcomingEventsResponse
+
+struct UpcomingEventsResponse: Codable {
     let results: [UpcomingEvent]
 }

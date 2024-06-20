@@ -28,14 +28,12 @@ struct UpcomingEventsView: View {
 
     private var placeholder: some View {
         List {
-            ForEach(0 ..< 5) { _ in
-                VStack(alignment: .leading) {
-                    Text("Upcoming event")
-                        .font(.headline)
-                        .bold()
-                    Text("***********************")
-                        .font(.caption)
-                }
+            ForEach(0 ..< 8) { _ in
+                EventListItem(
+                    title: "Upcoming event",
+                    description: "Wait for it....",
+                    startTime: "In a minute"
+                )
             }
         }
         .shimmering()
@@ -47,13 +45,11 @@ struct UpcomingEventsView: View {
                 NavigationLink {
                     UpcomingEventDetails(event: event)
                 } label: {
-                    VStack(alignment: .leading) {
-                        Text(event.title)
-                            .font(.headline)
-                            .bold()
-                        Text(event.description)
-                            .font(.caption)
-                    }
+                    EventListItem(
+                        title: event.title,
+                        description: event.description,
+                        startTime: event.start
+                    )
                 }
             }
         }
